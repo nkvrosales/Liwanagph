@@ -3,7 +3,6 @@
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
 **Liwanag.ph** is a modern, web-based Electric Billing Management System designed to streamline the process of billing, user management, and payment tracking. Built with PHP and MySQL, it features a clean, responsive interface powered by custom CSS and modern UI principles.
 
@@ -43,7 +42,7 @@ To get this project running on your local machine, follow these steps:
 1.  **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/yourusername/ebill.git
+    git clone https://github.com/yourusername/liwanagph.git
     ```
 
 2.  **Move to Web Directory:**
