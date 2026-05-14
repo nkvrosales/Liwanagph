@@ -1,0 +1,372 @@
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --accent-color: #0dcaf0;
+    --dark-bg: #0f172a;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --text-light: #f8f9fa;
+    --gradient-primary: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    --gradient-dark: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Glassmorphism Classes */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-nav {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Hero Section */
+#headerwrap {
+    background: var(--gradient-dark);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+
+.hero-content {
+    background: rgba(15, 23, 42, 0.6);
+    padding: 3rem;
+    border-radius: 24px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Form Styles */
+.form-control {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    height: 48px;
+    transition: all 0.3s ease;
+}
+
+.input-group {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 25px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(13, 202, 240, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.input-group-text {
+    background: transparent !important;
+    border: none !important;
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+.input-group .form-control {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding-left: 0.5rem !important;
+    color: #ffffff !important;
+}
+
+.form-control, .form-select {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    height: 48px;
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-weight: 400;
+}
+
+.form-control:focus, .form-select:focus {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 0 15px rgba(13, 202, 240, 0.2) !important;
+    outline: none;
+    color: #ffffff !important;
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-position: right 1rem center !important;
+    background-size: 16px 12px !important;
+}
+
+.input-group .form-control, .input-group .form-select {
+    background: transparent !important;
+    border: none !important;
+    height: 100% !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+}
+
+.form-select option {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+    padding: 10px !important;
+}
+
+/* Ensure the select itself has white text even on light browser defaults */
+.form-select {
+    color: #ffffff !important;
+}
+
+.input-group-text i {
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
+}
+
+/* Responsive Table */
+.table {
+    color: var(--text-light);
+}
+
+.table-glass {
+    background: var(--glass-bg);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table-glass th {
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.table-glass td {
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.floating {
+    animation: float 4s ease-in-out infinite;
+}
+
+.transition-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-hover:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+    border-color: var(--accent-color) !important;
+}
+
+/* =============================================
+   READABILITY FIXES — Force visible text
+   ============================================= */
+
+/* Table headers always white & readable */
+.table thead th {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 1 !important;
+    padding: 1rem 0.75rem;
+}
+
+/* Table body cells always light */
+.table tbody td {
+    color: #e2e8f0 !important;
+    vertical-align: middle;
+    border-color: rgba(255,255,255,0.06) !important;
+}
+
+/* Override Bootstrap table-dark which sets its own colors */
+.table-dark {
+    --bs-table-bg: transparent !important;
+    --bs-table-color: #e2e8f0 !important;
+    --bs-table-border-color: rgba(255,255,255,0.08) !important;
+    --bs-table-hover-bg: rgba(255,255,255,0.04) !important;
+    --bs-table-striped-bg: rgba(255,255,255,0.03) !important;
+    color: #e2e8f0 !important;
+}
+
+.table-dark thead th {
+    color: #ffffff !important;
+    background: rgba(13, 110, 253, 0.15) !important;
+    border-bottom: 1px solid rgba(13,202,240,0.2) !important;
+}
+
+/* Badge text always visible */
+.badge {
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.04em;
+}
+
+.badge.bg-primary { color: #ffffff !important; }
+.badge.bg-success { color: #ffffff !important; }
+.badge.bg-danger  { color: #ffffff !important; }
+.badge.bg-warning { color: #1a1a1a !important; }
+.badge.bg-info    { color: #1a1a1a !important; }
+
+/* Glassmorphism badges (bg-opacity variants) */
+.bg-primary.bg-opacity-20.text-primary { color: #93c5fd !important; }
+.bg-success.bg-opacity-20.text-success { color: #86efac !important; }
+.bg-danger.bg-opacity-20.text-danger   { color: #fca5a5 !important; }
+.bg-warning.bg-opacity-20.text-warning { color: #fde68a !important; }
+.bg-info.bg-opacity-20.text-info       { color: #67e8f9 !important; }
+
+/* Stats card text */
+.card-stats .card-body h3 {
+    color: #ffffff !important;
+    font-size: 2rem !important;
+}
+.card-stats .card-body .text-muted {
+    color: #94a3b8 !important;
+}
+.card-stats {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px !important;
+}
+
+/* Icon shapes */
+.icon-shape {
+    border-radius: 12px !important;
+}
+
+/* Breadcrumb */
+.breadcrumb-item a,
+.breadcrumb-item.active {
+    color: #94a3b8 !important;
+}
+
+/* General muted text */
+.text-muted {
+    color: #94a3b8 !important;
+}
+
+/* Sidebar label text */
+#sidebar-wrapper .list-group-item {
+    color: #cbd5e1 !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Wrapper layout for dashboard pages */
+#wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar-wrapper {
+    min-width: 230px;
+    max-width: 230px;
+    min-height: 100vh;
+    background: rgba(15, 23, 42, 0.85);
+    border-right: 1px solid rgba(255,255,255,0.07);
+}
+#page-content-wrapper {
+    flex: 1;
+    min-width: 0;
+    padding: 1.5rem;
+}
+
+/* Dropdown readability & Styling */
+.dropdown-menu {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.dropdown-item {
+    color: #ffffff !important;
+    background: #1e293b !important; /* Start with dark navy button */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+    margin-top: 5px;
+    padding: 0.6rem 1rem !important;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.dropdown-item:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-item:hover {
+    background: #0d6efd !important;
+    border-color: #0d6efd !important;
+    color: #ffffff !important;
+    transform: translateX(3px);
+}
+
+.dropdown-item:hover i {
+    color: #ffffff !important;
+}
